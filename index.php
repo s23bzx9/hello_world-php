@@ -6,5 +6,5 @@
   $result=pg_query($conn,"select * from public.msgs");
   $rows=pg_fetch_all($result)
 
-  print_r($result);
+  print_r($rows);
 ?>
