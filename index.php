@@ -4,7 +4,7 @@
   $conn_string="host=137.116.194.198 port=5432 dbname=postgres user=postgres password=nnnn";
   $conn=pg_connect($conn_string);
   $result=pg_query($conn,"select * from public.msgs");
-  $rows=pg_fetch_all($result)
+  $rows=pg_fetch_array($result)
 
   print_r($rows);
 ?>
