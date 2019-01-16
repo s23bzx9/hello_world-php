@@ -6,6 +6,6 @@
   $result=pg_query($conn,"select * from public.msgs");
   $rows=pg_fetch_array($result);
 
-  echo "Print results from DB query";
+  echo "<br/><br/>Print results from DB query";
   // print_r($rows);
 ?>
