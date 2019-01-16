@@ -1,4 +1,8 @@
 <?php
+  ini_set('display_errors', 1);
+  ini_set('display_startup_errors', 1);
+  error_reporting(E_ALL);
+
   echo "PHP Hello world. Generated at ".date("H:i:s d.m.Y")."<hr/>";
 
   $conn_string="host=137.116.194.198 port=5432 dbname=postgres user=postgres password=nnnn";
@@ -7,5 +11,5 @@
   $rows=pg_fetch_array($result);
 
   echo "<br/><br/>Print results from DB query";
-  // print_r($rows);
+  print_r($rows);
 ?>
