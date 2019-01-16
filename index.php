@@ -4,6 +4,6 @@
   $result=pg_query($conn,"select * from public.msgs");
   $rows=pg_fetch_all($result);
 
-  echo "PHP Hello world. Generated at ".date("H:i:s d.m.Y")."<hr/><br/><br/>Print results from DB query #1<pre>";
+  echo "PHP Hello world. Generated at ".date("H:i:s d.m.Y")."<hr/><br/><br/>Print results from DB query<pre>";
   print_r($rows);
 ?>
