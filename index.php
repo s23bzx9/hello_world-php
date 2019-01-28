@@ -7,5 +7,5 @@
   echo "PHP Hello world 1. Generated at ".date("H:i:s d.m.Y")." for IP: ".$_SERVER['REMOTE_ADDR']."<hr/><br/><br/>Print results from DB query<pre>";
   print_r($rows);
 
-  //phpinfo();
+  phpinfo();
 ?>
