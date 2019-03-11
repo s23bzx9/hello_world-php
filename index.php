@@ -5,8 +5,7 @@
   $db_username = getenv('DATABASE_USER');
   $db_password = getenv('DATABASE_PASSWORD');
 
-  // $conn_string="host=$db_host port=$db_port dbname=$db_name user=$db_username".$db_password!=""?" password=$db_password":"";
-  $conn_string="host=137.116.194.198 port=5432 dbname=postgres user=postgres";
+  $conn_string="host=$db_host port=$db_port dbname=$db_name user=$db_username".$db_password!=""?" password=$db_password":"";
   $conn=pg_connect($conn_string);
   $result=pg_query($conn,"select * from public.msgs");
   $rows=pg_fetch_all($result);
